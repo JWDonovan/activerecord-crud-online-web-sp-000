@@ -39,19 +39,19 @@ def can_be_created_in_a_block(args = { title: "Home Alone", release_date: 1990 }
 end
 
 def can_get_the_first_item_in_the_database
-  Movies.first
+  Movie.first
 end
 
 def can_get_the_last_item_in_the_database
-  Movies.last
+  Movie.last
 end
 
 def can_get_size_of_the_database
-  Movies.count
+  Movie.count
 end
 
 def can_find_the_first_item_from_the_database_using_id
-  Movies.find_by(id: 1)
+  Movie.find_by(id: 1)
 end
 
 def can_find_by_multiple_attributes
@@ -60,7 +60,7 @@ def can_find_by_multiple_attributes
   # release_date == 2000
   # director == "Me"
 
-  Movies.find_by(title: "Title", release_date: 2000, director: "Me")
+  Movie.find_by(title: "Title", release_date: 2000, director: "Me")
 end
 
 def can_find_using_where_clause_and_be_sorted
